@@ -1,55 +1,56 @@
-# People Dashboard — AG Grid React
+# 📊 Factwise People Dashboard
 
-A modern employee analytics dashboard built with **React** and **AG Grid** (client-side rendering).
+A premium, highly interactive Employee Analytics and Management Dashboard built with a focus on cutting-edge aesthetics, liquid animations, and blazing-fast performance.
 
-## Features
+## ✨ Features
 
-- **AG Grid Integration** — Full-featured data grid with sorting, filtering, pagination, and CSV export
-- **Custom Cell Renderers** — Avatar initials, department badges, rating bars, status indicators, and skill tags
-- **Quick Search** — Global text search across all columns
-- **Department Filtering** — Filter employees by department with a single click
-- **Floating Filters** — Per-column inline filters for precise data querying
-- **Responsive Design** — Works seamlessly across desktop and tablet viewports
-- **Dark Theme** — Premium dark UI with glassmorphism and subtle animations
+- **Liquid Parallax Background**: Immersive, glowing orbs dynamically follow your cursor for a 3D magnetic feel.
+- **Frosted Glass Side-Drawer**: Click any employee to reveal a stunning glassmorphic profile panel complete with skill tags and custom animated performance bars.
+- **Micro-Interactions**: Tactile button lifts, bounding animations, and satisfying visual feedback (e.g., the bouncy checkmark on the Export CSV button).
+- **Advanced Grid Engine**: Powered by AG Grid, featuring quick search, floating column filters, customizable sorting, and CSV export.
+- **Glassmorphic UI**: Extensive use of backdrop-blur, subtle gradients, and translucent borders for a highly premium, modern app feel.
+- **Fully Responsive**: Optimized to look gorgeous and function perfectly across all device sizes.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- React 18
-- AG Grid Community v36
-- Vite 5
-- Vanilla CSS (no external UI library)
+- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/) for robust, type-safe architecture
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (The absolute latest styling engine)
+- **Data Grid**: [AG Grid (Community Edition)](https://www.ag-grid.com/)
 
-## Getting Started
+## 🚀 Getting Started
 
-```bash
-npm install
-npm run dev
-```
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-The app will be available at `http://localhost:5173`.
+### Installation
 
-## Project Structure
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Shubh-Pawar007/factwise-dashboard.git
+   cd factwise-dashboard
+   ```
 
-```
-src/
-├── components/
-│   ├── EmployeeGrid.jsx   # AG Grid with custom renderers
-│   ├── EmployeeGrid.css   # Grid theme overrides
-│   ├── StatsBar.jsx        # Summary stat cards
-│   └── StatsBar.css
-├── data/
-│   └── employees.js        # Employee dataset (20 records)
-├── utils/
-│   └── formatters.js       # Currency, date, color utilities
-├── App.jsx
-├── App.css
-├── index.css               # Global reset & dark theme
-└── main.jsx
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Build for Production
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run build
-npm run preview
-```
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 🏗️ Architecture
+The codebase was recently refactored to adhere to enterprise React best practices:
+- Strictly typed using dedicated interfaces (`src/types/index.ts`).
+- Highly modularized cell renderers (`src/components/EmployeeGrid/renderers.tsx`) isolated from core logic.
+- Pure Tailwind CSS utility classes eliminating legacy CSS file bloat.
+
+---
+*Crafted with precision for Factwise.*
