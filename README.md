@@ -1,5 +1,8 @@
 # 📊 Factwise People Dashboard
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fabulous-begonia-4d8a46/deploy-status)](https://fabulous-begonia-4d8a46.netlify.app/)
+**Live Demo:** [https://fabulous-begonia-4d8a46.netlify.app/](https://fabulous-begonia-4d8a46.netlify.app/)
+
 A premium, highly interactive Employee Analytics and Management Dashboard built with a focus on cutting-edge aesthetics, liquid animations, and blazing-fast performance.
 
 ## ✨ Features
