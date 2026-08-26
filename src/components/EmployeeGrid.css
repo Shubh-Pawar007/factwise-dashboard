@@ -126,29 +126,9 @@
   border-color: rgba(16, 185, 129, 0.3);
 }
 
-/* ── AG Grid Theme Overrides ──────────────────────────────── */
+/* ── AG Grid Wrapper ──────────────────────────────────────── */
 
-.ag-theme-custom {
-  --ag-background-color: rgba(15, 23, 42, 0.6);
-  --ag-header-background-color: rgba(30, 41, 59, 0.8);
-  --ag-header-foreground-color: #94a3b8;
-  --ag-foreground-color: #e2e8f0;
-  --ag-border-color: rgba(255, 255, 255, 0.06);
-  --ag-row-border-color: rgba(255, 255, 255, 0.04);
-  --ag-odd-row-background-color: rgba(255, 255, 255, 0.02);
-  --ag-row-hover-color: rgba(99, 102, 241, 0.08);
-  --ag-selected-row-background-color: rgba(99, 102, 241, 0.12);
-  --ag-range-selection-border-color: #6366f1;
-  --ag-range-selection-background-color: rgba(99, 102, 241, 0.1);
-  --ag-input-border-color: rgba(255, 255, 255, 0.1);
-  --ag-input-focus-border-color: rgba(99, 102, 241, 0.5);
-  --ag-checkbox-checked-color: #6366f1;
-  --ag-font-family: 'Inter', sans-serif;
-  --ag-font-size: 13px;
-  --ag-grid-size: 6px;
-  --ag-alpine-active-color: #6366f1;
-  --ag-control-panel-background-color: rgba(15, 23, 42, 0.95);
-
+.ag-grid-wrapper {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -157,47 +137,22 @@
   -webkit-backdrop-filter: blur(12px);
 }
 
-.ag-theme-custom .ag-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.ag-theme-custom .ag-header-cell {
-  font-size: 0.75rem;
-  font-weight: 600;
+.ag-header-cell-label {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.ag-theme-custom .ag-floating-filter-input input {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: 6px !important;
-  color: #e2e8f0 !important;
-  font-size: 0.8rem !important;
-}
-
-.ag-theme-custom .ag-floating-filter-input input:focus {
-  border-color: rgba(99, 102, 241, 0.5) !important;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1) !important;
-}
-
-.ag-theme-custom .ag-row {
+.ag-row {
   transition: background-color 0.2s ease;
 }
 
-.ag-theme-custom .ag-paging-panel {
-  background: rgba(30, 41, 59, 0.6);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  color: #94a3b8;
+.ag-floating-filter-input input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 6px !important;
 }
 
-.ag-theme-custom .ag-paging-button {
-  color: #94a3b8;
-  cursor: pointer;
-}
-
-.ag-theme-custom .ag-paging-button:hover {
-  color: #e2e8f0;
+.ag-floating-filter-input input:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1) !important;
 }
 
 /* ── Custom Cell Styles ───────────────────────────────────── */

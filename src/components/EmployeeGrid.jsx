@@ -1,10 +1,34 @@
 import { useState, useMemo, useCallback, useRef } from 'react';
 import { AgGridReact } from 'ag-grid-react';
-import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, themeQuartz } from 'ag-grid-community';
 import { getDepartmentColor, getRatingColor, formatCurrency, formatDate, getInitials } from '../utils/formatters';
 import './EmployeeGrid.css';
 
 ModuleRegistry.registerModules([AllCommunityModule]);
+
+const customDarkTheme = themeQuartz.withParams({
+  backgroundColor: 'rgba(15, 23, 42, 0.6)',
+  headerBackgroundColor: 'rgba(30, 41, 59, 0.8)',
+  headerFontSize: 12,
+  headerFontWeight: 600,
+  headerTextColor: '#94a3b8',
+  foregroundColor: '#e2e8f0',
+  borderColor: 'rgba(255, 255, 255, 0.06)',
+  rowBorder: { color: 'rgba(255, 255, 255, 0.04)' },
+  oddRowBackgroundColor: 'rgba(255, 255, 255, 0.02)',
+  rowHoverColor: 'rgba(99, 102, 241, 0.08)',
+  selectedRowBackgroundColor: 'rgba(99, 102, 241, 0.12)',
+  fontFamily: 'Inter, sans-serif',
+  fontSize: 13,
+  accentColor: '#6366f1',
+  borderRadius: 2,
+  wrapperBorderRadius: 16,
+  inputBorderColor: 'rgba(255, 255, 255, 0.1)',
+  inputFocusBorderColor: 'rgba(99, 102, 241, 0.5)',
+  checkboxCheckedBackgroundColor: '#6366f1',
+  checkboxCheckedBorderColor: '#6366f1',
+  chromeBackgroundColor: 'rgba(30, 41, 59, 0.6)',
+});
 
 /* ── Custom Cell Renderers ─────────────────────────────────── */
 
@@ -297,9 +321,10 @@ const EmployeeGrid = ({ data }) => {
       </div>
 
       {/* AG Grid */}
-      <div className="ag-theme-custom">
+      <div className="ag-grid-wrapper">
         <AgGridReact
           ref={gridRef}
+          theme={customDarkTheme}
           rowData={filteredData}
           columnDefs={columnDefs}
           defaultColDef={defaultColDef}
